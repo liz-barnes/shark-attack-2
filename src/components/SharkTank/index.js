@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import LiveStudentCard from '../LiveStudent';
+import studentShape from '../../helpers/props/studentShape';
 
 export default class SharkTank extends Component {
+  static propTypes = {
+    liveStudents: studentShape,
+  }
+
   render() {
     const { liveStudents } = this.props;
     const renderLiveStudentsToDom = () => liveStudents.map((student) => (

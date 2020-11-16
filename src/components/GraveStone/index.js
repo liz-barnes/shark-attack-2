@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import { Card, CardBody, CardTitle } from 'reactstrap';
+import studentShape from '../../helpers/props/studentShape';
 
 export default class GraveStoneCard extends Component {
+  static propTypes = {
+    belovedStudents: studentShape,
+  }
+
   render() {
     const { firstName, lastName, image } = this.props;
 
