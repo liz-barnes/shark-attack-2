@@ -9,6 +9,7 @@ export default class GraveYard extends Component {
           key={student.id}
           firstName={student.firstName}
           lastName={student.lastName}
+          image={student.image}
         />
     ));
     return (

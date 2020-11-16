@@ -4,7 +4,7 @@ const students = [
     firstName: 'Autumn',
     lastName: 'Fotopoulos',
     image: 'https://avatars3.githubusercontent.com/u/67810121?v=4',
-    isDead: true,
+    isDead: false,
   },
   {
     id: '2',
@@ -156,6 +156,7 @@ const dearlyBeloved = () => {
 const followTheLight = (id) => {
   const attackedStudent = students.find((student) => id === student.id);
   attackedStudent.isDead = true;
+  attackedStudent.image = 'https://anytimecostumes-weblinc.netdna-ssl.com/product_images/mossy-bat-rip-gravestone/577c177769702d1e83000245/original.jpg?c=1467750263';
   console.warn('followthelight', attackedStudent.isDead);
 };
 
