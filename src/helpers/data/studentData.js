@@ -156,7 +156,7 @@ const dearlyBeloved = () => {
 const followTheLight = (id) => {
   const attackedStudent = students.find((student) => id === student.id);
   console.warn('followthelight', attackedStudent);
-  // attackedStudent.isDead = true;
+  attackedStudent.isDead = true;
 };
 
 export { livingStudents, dearlyBeloved, followTheLight };
