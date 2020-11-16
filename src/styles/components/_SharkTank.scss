@@ -1,7 +1,7 @@
 .SharkTankContainer {
     background-image: url(https://i.pinimg.com/originals/3a/77/e7/3a77e791117f2d2a0272c4ebedfe196f.gif);
-    background-size: 1fr;
-    background-repeat: none;
+    background-size: min($numbers: 1500px);
+    background-repeat: repeat;
 }
 
 .LiveStudentContainer {
