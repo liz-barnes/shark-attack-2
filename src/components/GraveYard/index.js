@@ -14,7 +14,7 @@ export default class GraveYard extends Component {
     return (
       <div className='GraveYard'>
         <div className='Header'>
-          <h1 className='GraveYardHeader'>Grave Yard</h1>
+          {/* <h1 className='GraveYardHeader'>Grave Yard</h1> */}
         </div>
         <div className='BelovedStudentContainer'>
           { renderBelovedStudentsToDom() }

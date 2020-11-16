@@ -41,7 +41,7 @@ export default class App extends Component {
       <div className="App">
         <div className='SharkTankContainer'>
           <div className='SharkBtnContainer'>
-            <button className='SharkAttackBtn' onClick={this.sharkAttack}>!!!!!SHARK ATTACK!!!!!</button>
+            <button className='SharkAttackBtn' onClick={this.sharkAttack}>!!!!! SHARK ATTACK !!!!!</button>
           </div>
         <SharkTank
           key={liveStudents.id}

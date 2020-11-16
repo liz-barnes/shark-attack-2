@@ -1,5 +1,5 @@
 .LiveStudentCard, .BelovedStudentCard {
-    width: 30%;
+    width: 20%;
     margin: 10px;
     min-width: 200px;
 }
@@ -8,4 +8,8 @@
     display: flex;
     justify-content: center;
     color: $primaryColor;
+}
+
+.BelovedStudentCard .CardBody {
+    background-color: #000000;
 }
