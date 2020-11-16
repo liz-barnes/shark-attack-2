@@ -1,0 +1,11 @@
+.LiveStudentCard, .BelovedStudentCard {
+    width: 20%;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.Header {
+    display: flex;
+    justify-content: center;
+    color: $primaryColor;
+}

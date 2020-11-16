@@ -1,0 +1,18 @@
+.GraveYard {
+    background-image: url(https://i.pinimg.com/originals/dc/a3/74/dca37423a3e3c5c5bf83e6b8b723082f.jpg);
+    background-size: min($numbers: 1500px);
+    background-repeat: repeat;
+    margin-top: 5px;
+    min-height: 500px;
+}
+
+.BelovedStudentContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 25px 75px;
+}
+
+.GraveYardHeader {
+    margin-top: 15px;
+}
