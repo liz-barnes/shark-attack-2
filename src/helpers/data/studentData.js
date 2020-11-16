@@ -4,7 +4,7 @@ const students = [
     firstName: 'Autumn',
     lastName: 'Fotopoulos',
     image: 'https://avatars3.githubusercontent.com/u/67810121?v=4',
-    isDead: false,
+    isDead: true,
   },
   {
     id: '2',
@@ -148,15 +148,15 @@ const livingStudents = () => {
 };
 
 const dearlyBeloved = () => {
-  const belovedStudents = students.filter((student) => students.isDead === true);
+  const belovedStudents = students.filter((student) => student.isDead === true);
   console.warn('belovedStudents', belovedStudents);
   return belovedStudents;
 };
 
 const followTheLight = (id) => {
   const attackedStudent = students.find((student) => id === student.id);
-  console.warn('followthelight', attackedStudent);
   attackedStudent.isDead = true;
+  console.warn('followthelight', attackedStudent.isDead);
 };
 
 export { livingStudents, dearlyBeloved, followTheLight };
