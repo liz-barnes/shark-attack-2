@@ -140,3 +140,23 @@ const students = [
     isDead: false,
   },
 ];
+
+const livingStudents = () => {
+  const liveStudents = students.filter((student) => student.isDead === false);
+  console.warn('liveStudents', liveStudents);
+  return liveStudents;
+};
+
+const dearlyBeloved = () => {
+  const belovedStudents = students.filter((student) => students.isDead === true);
+  console.warn('belovedStudents', belovedStudents);
+  return belovedStudents;
+};
+
+const followTheLight = (id) => {
+  const attackedStudent = students.find((student) => id === student.id);
+  console.warn('followthelight', attackedStudent);
+  // attackedStudent.isDead = true;
+};
+
+export { livingStudents, dearlyBeloved, followTheLight };
