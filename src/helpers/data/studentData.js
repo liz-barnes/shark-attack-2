@@ -143,13 +143,11 @@ const students = [
 
 const livingStudents = () => {
   const liveStudents = students.filter((student) => student.isDead === false);
-  console.warn('liveStudents', liveStudents);
   return liveStudents;
 };
 
 const dearlyBeloved = () => {
   const belovedStudents = students.filter((student) => student.isDead === true);
-  console.warn('belovedStudents', belovedStudents);
   return belovedStudents;
 };
 
@@ -157,7 +155,6 @@ const followTheLight = (id) => {
   const attackedStudent = students.find((student) => id === student.id);
   attackedStudent.isDead = true;
   attackedStudent.image = 'https://anytimecostumes-weblinc.netdna-ssl.com/product_images/mossy-bat-rip-gravestone/577c177769702d1e83000245/original.jpg?c=1467750263';
-  console.warn('followthelight', attackedStudent.isDead);
 };
 
 export { livingStudents, dearlyBeloved, followTheLight };

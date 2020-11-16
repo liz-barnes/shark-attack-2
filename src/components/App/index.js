@@ -29,7 +29,6 @@ export default class App extends Component {
       const randomStudent = this.state.liveStudents[
         Math.floor(Math.random() * this.state.liveStudents.length)
       ].id;
-      console.warn('randomstudent', randomStudent);
       followTheLight(randomStudent);
       this.loadData();
     }
