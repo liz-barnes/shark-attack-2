@@ -39,11 +39,15 @@ export default class App extends Component {
     const { liveStudents, belovedStudents } = this.state;
     return (
       <div className="App">
-        <button onClick={this.sharkAttack}>!!!!!SHARK ATTACK!!!!!</button>
+        <div className='SharkTankContainer'>
+          <div className='SharkBtnContainer'>
+            <button className='SharkAttackBtn' onClick={this.sharkAttack}>!!!!!SHARK ATTACK!!!!!</button>
+          </div>
         <SharkTank
           key={liveStudents.id}
           liveStudents={liveStudents}
         />
+        </div>
         <GraveYard
         key={belovedStudents.id}
         belovedStudents={belovedStudents}

@@ -1,0 +1,15 @@
+@import '../globals/variables';
+
+.SharkBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.SharkAttackBtn {
+  background-color: $accentColor;
+  color: $primaryColor;
+  border-radius: 5px;
+  height: 45px;
+  border: none;
+  margin: 25px 0px;
+}

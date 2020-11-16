@@ -1,0 +1,16 @@
+.SharkTankContainer {
+    background-image: url(https://i.pinimg.com/originals/3a/77/e7/3a77e791117f2d2a0272c4ebedfe196f.gif);
+}
+
+.Header {
+    display: flex;
+    justify-content: center;
+    color: $primaryColor;
+}
+
+.LiveStudentContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 25px 75px;
+}

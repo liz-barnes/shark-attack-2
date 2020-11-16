@@ -6,7 +6,7 @@ export default class LiveStudentCard extends Component {
     const { firstName, lastName, image } = this.props;
 
     return (
-      <div>
+      <div className="LiveStudentCard">
         <Card>
           <CardBody>
             <img width="100%" src={ image } alt="Card image cap" />

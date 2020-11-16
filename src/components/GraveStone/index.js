@@ -6,7 +6,7 @@ export default class GraveStoneCard extends Component {
     const { firstName, lastName } = this.props;
 
     return (
-      <div>
+      <div className='BelovedStudentCard'>
         <Card>
           <CardBody>
             <CardTitle tag="h5">{ firstName } { lastName }</CardTitle>

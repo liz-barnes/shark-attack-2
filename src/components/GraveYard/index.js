@@ -12,10 +12,14 @@ export default class GraveYard extends Component {
         />
     ));
     return (
-      <>
-        <h1>Grave Yard</h1>
-        { renderBelovedStudentsToDom() }
-      </>
+      <div className='GraveYard'>
+        <div className='Header'>
+          <h1 className='GraveYardHeader'>Grave Yard</h1>
+        </div>
+        <div className='BelovedStudentContainer'>
+          { renderBelovedStudentsToDom() }
+        </div>
+      </div>
     );
   }
 }

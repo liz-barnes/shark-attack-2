@@ -13,10 +13,14 @@ export default class SharkTank extends Component {
         />
     ));
     return (
-      <>
+      <div className='SharkTank'>
+        <div className='Header'>
         <h1>Shark Tank</h1>
-        { renderLiveStudentsToDom() }
-      </>
+        </div>
+        <div className='LiveStudentContainer'>
+          { renderLiveStudentsToDom() }
+        </div>
+      </div>
     );
   }
 }
